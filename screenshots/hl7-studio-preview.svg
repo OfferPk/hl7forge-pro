@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b13"/>
+      <stop offset="100%" stop-color="#0d1522"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131f32"/>
+      <stop offset="100%" stop-color="#0a111c"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Top Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="60" fill="#101c2e" stroke="#1c2b42" stroke-width="1"/>
+  <rect x="24" y="14" width="115" height="32" rx="6" fill="url(#badgeGrad)"/>
+  <text x="33" y="35" fill="#000000" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800">HL7 FORGE</text>
+  <text x="150" y="36" fill="#ffffff" font-family="'Inter', sans-serif" font-size="16" font-weight="700">HL7Forge Pro <tspan fill="#10b981" font-size="12">v1.0.0</tspan></text>
+  <text x="315" y="35" fill="#64748b" font-family="'Inter', sans-serif" font-size="12">HL7 v2.5.1 ER7 &amp; FHIR R4 Integration Engine &amp; HIPAA Auditor</text>
+
+  <!-- Badges in Header -->
+  <rect x="740" y="17" width="115" height="26" rx="4" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.4)"/>
+  <text x="752" y="34" fill="#10b981" font-family="'Inter', sans-serif" font-size="11" font-weight="600">HL7 v2.5.1 ER7</text>
+  <rect x="865" y="17" width="115" height="26" rx="4" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.4)"/>
+  <text x="877" y="34" fill="#06b6d4" font-family="'Inter', sans-serif" font-size="11" font-weight="600">FHIR R4 JSON</text>
+  <rect x="990" y="17" width="185" height="26" rx="4" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.4)"/>
+  <text x="1002" y="34" fill="#f59e0b" font-family="'Inter', sans-serif" font-size="11" font-weight="600">SMART on FHIR &amp; HIPAA</text>
+
+  <!-- Sub Navigation Tabs -->
+  <rect x="0" y="60" width="1200" height="42" fill="#0d1522" stroke="#1c2b42" stroke-width="1"/>
+  <text x="40" y="86" fill="#10b981" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Message Studio &amp; Segment Inspector</text>
+  <line x1="30" y1="101" x2="270" y2="101" stroke="#10b981" stroke-width="2"/>
+  <text x="310" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13" font-weight="600">HL7 to FHIR R4 Converter</text>
+  <text x="530" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13" font-weight="600">HIPAA PHI De-Identification</text>
+  <text x="760" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Cybersecurity Auditor</text>
+  <text x="960" y="86" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Clinical Workflow Simulator</text>
+
+  <!-- Left Card: Message Builder -->
+  <rect x="30" y="125" width="550" height="540" rx="8" fill="url(#cardGrad)" stroke="#1c2b42" stroke-width="1"/>
+  <text x="50" y="155" fill="#ffffff" font-family="'Inter', sans-serif" font-size="15" font-weight="700">HL7 v2.x ER7 Message Synthesizer</text>
+  <rect x="420" y="140" width="140" height="22" rx="4" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)"/>
+  <text x="435" y="155" fill="#10b981" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Pipe &amp; Hat Encoding</text>
+
+  <!-- Form Fields -->
+  <text x="50" y="195" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Message Type (MSH-9)</text>
+  <rect x="50" y="205" width="510" height="34" rx="6" fill="#0a111c" stroke="#1c2b42"/>
+  <text x="65" y="227" fill="#f1f5f9" font-family="'Inter', sans-serif" font-size="12">ORU^R01^ORU_R01 — Observation / Lab Result</text>
+
+  <text x="50" y="265" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Sending Application / Facility</text>
+  <rect x="50" y="275" width="245" height="34" rx="6" fill="#0a111c" stroke="#1c2b42"/>
+  <text x="65" y="297" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">EPIC_EHR (MSH-3)</text>
+
+  <rect x="315" y="275" width="245" height="34" rx="6" fill="#0a111c" stroke="#1c2b42"/>
+  <text x="330" y="297" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">MEMORIAL_HOSPITAL (MSH-4)</text>
+
+  <text x="50" y="335" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Patient MRN (PID-3) &amp; Name (PID-5)</text>
+  <rect x="50" y="345" width="245" height="34" rx="6" fill="#0a111c" stroke="#1c2b42"/>
+  <text x="65" y="367" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">MRN_98765432</text>
+
+  <rect x="315" y="345" width="245" height="34" rx="6" fill="#0a111c" stroke="#1c2b42"/>
+  <text x="330" y="367" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">DOE^JOHN^A</text>
+
+  <text x="50" y="405" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Observation Telemetry (LOINC &amp; Value)</text>
+  <rect x="50" y="415" width="510" height="34" rx="6" fill="#0a111c" stroke="#10b981" stroke-width="1.5"/>
+  <text x="65" y="437" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">8867-4^Heart Rate^LN | Value: 78 bpm</text>
+
+  <!-- Action Buttons -->
+  <rect x="50" y="480" width="165" height="36" rx="6" fill="#10b981"/>
+  <text x="68" y="503" fill="#000" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Synthesize HL7</text>
+
+  <rect x="225" y="480" width="165" height="36" rx="6" fill="#1e293b" stroke="#1c2b42"/>
+  <text x="245" y="503" fill="#f1f5f9" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Export MLLP PCAP</text>
+
+  <rect x="400" y="480" width="160" height="36" rx="6" fill="#1e293b" stroke="#1c2b42"/>
+  <text x="415" y="503" fill="#f1f5f9" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Translate to FHIR</text>
+
+  <!-- Right Card 1: ER7 Stream -->
+  <rect x="610" y="125" width="560" height="180" rx="8" fill="url(#cardGrad)" stroke="#1c2b42" stroke-width="1"/>
+  <text x="630" y="155" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Wire-Level ER7 Message Stream (with MLLP)</text>
+  <rect x="1060" y="140" width="90" height="22" rx="4" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)"/>
+  <text x="1075" y="155" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">285 Chars</text>
+
+  <rect x="630" y="175" width="520" height="110" rx="6" fill="#050912" stroke="#1c2b42"/>
+  <text x="645" y="200" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">&lt;VT&gt;MSH|^~\&amp;|EPIC_EHR|MEMORIAL_HOSPITAL|LAB_SYS|CENTRAL_PATHOLOGY|20261005...</text>
+  <text x="645" y="225" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">PID|1||MRN_98765432^^^HOSPITAL^MR||DOE^JOHN^A||19840512|M|||123 HEALTHCARE...</text>
+  <text x="645" y="250" fill="#06b6d4" font-family="'JetBrains Mono', monospace" font-size="11">OBX|1|NM|8867-4^Heart Rate^LN||78|bpm|60-100|N|||F&lt;FS&gt;&lt;CR&gt;</text>
+
+  <!-- Right Card 2: Dissection Tree -->
+  <rect x="610" y="325" width="560" height="340" rx="8" fill="url(#cardGrad)" stroke="#1c2b42" stroke-width="1"/>
+  <text x="630" y="355" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Segment Dissection &amp; FHIR Mapping Tree</text>
+  <rect x="1010" y="340" width="140" height="22" rx="4" fill="rgba(16,185,129,0.15)"/>
+  <text x="1025" y="355" fill="#10b981" font-family="'Inter', sans-serif" font-size="10" font-weight="700">VALID HL7 v2.5.1</text>
+
+  <!-- Dissection Items -->
+  <text x="630" y="395" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Header Segment (MSH):</text>
+  <text x="1100" y="395" text-anchor="end" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">ORU^R01 (Observation Result)</text>
+  <line x1="630" y1="405" x2="1140" y2="405" stroke="#1c2b42" stroke-dasharray="3,3"/>
+
+  <text x="630" y="430" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Patient Demographics (PID):</text>
+  <text x="1100" y="430" text-anchor="end" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">DOE^JOHN^A (MRN_98765432)</text>
+  <line x1="630" y1="440" x2="1140" y2="440" stroke="#1c2b42" stroke-dasharray="3,3"/>
+
+  <text x="630" y="465" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Observation Segment (OBX):</text>
+  <text x="1100" y="465" text-anchor="end" fill="#f1f5f9" font-family="'JetBrains Mono', monospace" font-size="12">LOINC 8867-4 = 78 bpm (Final)</text>
+  <line x1="630" y1="475" x2="1140" y2="475" stroke="#1c2b42" stroke-dasharray="3,3"/>
+
+  <text x="630" y="500" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">FHIR R4 Mapping Target:</text>
+  <text x="1100" y="500" text-anchor="end" fill="#06b6d4" font-family="'JetBrains Mono', monospace" font-size="12">Bundle: Patient + Observation</text>
+  <line x1="630" y1="510" x2="1140" y2="510" stroke="#1c2b42" stroke-dasharray="3,3"/>
+
+  <text x="630" y="535" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">SMART on FHIR Scope:</text>
+  <text x="1100" y="535" text-anchor="end" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">patient/Observation.read (VERIFIED)</text>
+  <line x1="630" y1="545" x2="1140" y2="545" stroke="#1c2b42" stroke-dasharray="3,3"/>
+
+  <text x="630" y="570" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Transport Framing:</text>
+  <text x="1100" y="570" text-anchor="end" fill="#00d2ff" font-family="'JetBrains Mono', monospace" font-size="12">MLLP &lt;VT&gt;...&lt;FS&gt;&lt;CR&gt; (TLS 1.3)</text>
+</svg>
